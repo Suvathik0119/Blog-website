@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Blog Website</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="./assets/img/logo.png">
+    </div>
+    
+    <nav>
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="#menu">Menu</a></li>
+            <li class="link"><a href="#fooder">About</a></li>
+        </ul>
+        <button class="btn" onclick="openmail()">Hire Me</button>
+    </nav>
+
+<div class="home" id="home">
+        <h1>A new adventure in ice-cream</h1>
+        <p>we belive that simple nature food tests best. <br>
+        our ice-cream is lovingly handmade is small batches
+        in the <br> heart using only simple, natural and freash local
+        ingredients of advanture and discovery.
+        </p>
+        <div class="read">
+            <a href="http://www.google.com/ice-cream/">Read more</a>
+        </div>
+        <hr>
+        <div class="hi">
+            <img src="./assets/img/1.jpg" >
+            <img src="./assets/img/2.jpg" >
+            <img src="./assets/img/3.jpg" >
+        </div>
+    <div class="video">
+        <video src="./assets/vedio/Body.mp4" controls/>
+    </div>
+</div>
+<!-- flover menu -->
+<h2>Flavers Details</h2>
+<section id="menu">
+    
+        <div class="flaver-content">
+
+            <div>
+                <img src="./assets/img/vennila.jpg" alt="error"/>
+                <h2>Vennila</h2>
+            </div>
+
+            <div>
+                <img src="./assets/img/choclate.jpg" alt="error"/>
+                <h2>Chocalate</h2>
+            </div>
+
+            <div >
+                <img src="./assets/img/cocco.jpg" alt="error"/>
+                <h2>Cocco</h2>
+            </div>
+
+            <div >
+                <img src="./assets/img/mango+vennila.jpg" alt="error"/>
+                <h2>Vennila Mango Mix</h2>
+            </div>
+
+            <div >
+                <img src="./assets/img/badam.jpg" alt="error"/>
+                <h2>Badam</h2>
+            </div>
+
+            <div >
+                <img src="./assets/img/berry.jpg" alt="error"/>
+                <h2>Berry</h2>
+            </div>
+
+            <div >
+                <img src="./assets/img/orange.jpg" alt="error"/>
+                <h2>Orange</h2>
+            </div>
+
+        </div>
+</section>
+<hr>
+<section id="fooder">
+    <div class="fd">
+        <div class="p"><p>All rights for copyright</p></div>
+        <ul>
+            <li>Content</li>
+            <img src="./assets/svg/wb.svg" alt="error">
+            <img src="./assets/svg/fb.svg" alt="error">
+            <img src="./assets/svg/li.svg" alt="error">
+        </ul>
+        
+    </div>
+</section>
+</body>
+<script>
+    function openmail() {
+        var recipientEmail = "k4suvathik@gmail.com";//enter your email/gmail here
+        var subject = "Inquiry from your Website";
+        var body = "Hello there,";
+    
+        
+        var mailtoLink = "mailto:" + encodeURIComponent(recipientEmail) +
+                         "?subject=" + encodeURIComponent(subject) +
+                         "&body=" + encodeURIComponent(body);
+    
+        window.location.href = mailtoLink;
+    }
+</script>
+</html>
